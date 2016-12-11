@@ -1,0 +1,6 @@
+<h2>New video</h2>
+
+<%= render "form.html", changeset: @changeset, categories: @categories,
+                        action: "/gscp" <> video_path(@conn, :create) %>
+
+<%= link "Back", to: "/gscp" <> video_path(@conn, :index) %>
